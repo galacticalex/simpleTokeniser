@@ -1,3 +1,10 @@
+
+<!-- 
+# SPDX-FileCopyrightText: 2022 Orcro Ltd. <team@orcro.co.uk>
+# 
+# SPDX-LicenseIdentifier: Apache-2.0
+-->
+
 # simpleTokeniser
 
 Disassemble 2 code files into individual variables names, function names, etc. and compare them.
@@ -20,4 +27,27 @@ Examples of words that are tokenised
 
 Examples of words that are not tokenised
 
-`my-variable()` (the parens are not included)
+`myvariable()` (the parens are not included), it would in fact be parsed as _myvariable_
+
+## Quick use
+
+Load the script into a text editor.
+Modify the variables in the box (lines 15, 20, and 21).
+Save the script with a nice name, such as `tokeniser_set.R`
+Run the script from the shell/from an IDE.
+
+## Licensing
+
+> Copyright © 2022 Orcro Ltd.
+
+This script and the accompanying materials are made available under the terms of the Apache License Version 2. A copy of the licence is available in `./LICENSES`. 
+
+### Dependencies
+
+This script must be run on an R interpreter.
+
+## Contact
+
+:house: Orcro Limited team@orcro.co.uk
+
+:hammer: Maintainer alexander.murphy@orcro.co.uk
