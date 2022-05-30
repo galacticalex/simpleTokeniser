@@ -57,6 +57,6 @@ similarities[similarities != ""]
 
 
 # write comparison results to new file
-write(similarities, "results.txt")
+write(unique(similarities), "results.txt")
 
 
