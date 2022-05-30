@@ -42,17 +42,17 @@ b1 = readChar(f1, file.info(f1)$size)
 b2 = readChar(f2, file.info(f2)$size)
 
 
-# tidy env (for debugging)
-rm(originalFileName, newFileName)
-
-
 # tokenise each buffer by whitespace
 t1 = unlist(strsplit(original, " "))
 t2 = unlist(strsplit(new, " "))
 
 
+# tidy env (for debugging)
+rm(f1, f2, b1, b2)
+
+
 # compare token lists
-similarities = original_t[original_t %in% new_t]
+similarities = t1[t1 %in% t2]
 similarities[similarities != ""]
 
 
